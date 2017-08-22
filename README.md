@@ -42,4 +42,3 @@ $ phpunit
 - [CRC calculation](http://www.zorc.breitbandkatze.de/crc.html). An online calculator to generate checksums for arbitrary polynomials and input. Recommended by pycrc.
 - [On-line CRC calculation and free library](http://www.lammertbies.nl/comm/info/crc-calculation.html). Another online calculator for some CRC algorithms.
 - [Catalogue of parametrised CRC algorithms](http://reveng.sourceforge.net/crc-catalogue/). Information about many different CRC algorithms.
-
