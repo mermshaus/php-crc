@@ -11,6 +11,7 @@ use mermshaus\CRC\CRC16QT;
 use mermshaus\CRC\CRC16USB;
 use mermshaus\CRC\CRC16XModem;
 use mermshaus\CRC\CRC16ZModem;
+use mermshaus\CRC\CRC5;
 use mermshaus\CRC\CRCInterface;
 use PHPUnit_Framework_TestCase;
 
@@ -94,6 +95,7 @@ class CRCSuiteTest extends PHPUnit_Framework_TestCase
         $tests[] = array(new CRC16USB(),    $data, '3df5');
         $tests[] = array(new CRC16XModem(), $data, 'd321');
         $tests[] = array(new CRC16ZModem(), $data, 'd321');
+        $tests[] = array(new CRC5(), $data, '1');
 
         $data = 'test';
 
@@ -106,6 +108,7 @@ class CRCSuiteTest extends PHPUnit_Framework_TestCase
         //$tests[] = array(new CRC16USB(),    $data, '3df5');
         $tests[] = array(new CRC16XModem(), $data, '9b06');
         //$tests[] = array(new CRC16ZModem(), $data, 'd321');
+        //$tests[] = array(new CRC5(), $data, '1');
 
         return $tests;
     }
